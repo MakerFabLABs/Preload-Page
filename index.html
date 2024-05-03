@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Loading Page</title>
+</head>
+
+<body class="hide-content">
+
+<!-- Overlay di caricamento -->
+<div class="loading-overlay">
+  <div class="loading-text">Caricamento in corso...</div>
+</div>
+
+<!-- Contenuto della pagina -->
+<div id="main-content">
+ <!--  <h1>Contenuto principale della pagina</h1>
+  <p>Questo è il contenuto principale della tua pagina.</p> -->
+  <img src="image.jpg" alt="">
+</div>
+
+<script>
+
+  // Nascondi l'overlay di caricamento e mostra il contenuto della pagina quando la pagina è completamente caricata
+  window.addEventListener("load", function() {
+    document.querySelector('.loading-overlay').style.display = 'none';
+    document.body.classList.remove('hide-content');
+  });
+
+</script>
+
+</body>
+</html>
